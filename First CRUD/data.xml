@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<pos>
+  
+  <product><itemNum>002</itemNum><desc>me</desc><loc>me</loc><quantt>30</quantt><price>30</price></product>
+  <product>
+    <itemNum>003</itemNum>
+    <desc>0003</desc>
+    <loc>malqwe</loc>
+    <quantt>100</quantt>
+    <price>2</price>
+  </product>
+  <product>
+    <itemNum>004</itemNum>
+    <desc>kewl</desc>
+    <loc>kewl</loc>
+    <quantt>10</quantt>
+    <price>50</price>
+  </product>
+  
+</pos>
