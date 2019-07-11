@@ -1,22 +1,20 @@
 <?php
-    $xml = new DOMDocument;
-    $xml->formatOutput = true;
-    $xml->preserveWhiteSpace = false;
-    $xml->Load('data.xml');
-    $itemNum = $_POST["itemNum"];
-    $desc = $_POST["desc"];
-    $loc = $_POST["loc"];
-    $quantt = $_POST["quantt"];
-    $price = $_POST["price"];
-    $newProduct = $xml->createElement('product');
-    $newProduct -> appendChild($xml->createElement('itemNum',$itemNum));
-    $newProduct -> appendChild($xml->createElement('desc',$desc));
-    $newProduct -> appendChild($xml->createElement('loc',$loc));
-    $newProduct -> appendChild($xml->createElement('quantt',$quantt));
-    $newProduct -> appendChild($xml->createElement('price',$price));
-    $xml->getElementsByTagName('pos')->item(0)->appendChild($newProduct);
-    $test = $xml->Save('data.xml');
-    if($test)
-        echo"Sucessfully Added!";
+	$xml = new DOMDocument('1.0', 'utf-8');
+	$xml->formatOutput = true;
+	$xml->preserveWhiteSpace = false;
+	$xml->Load('data.xml');
+	$id = $_POST["id"];
+	$name = $_POST["name"];
+	$course = $_POST["course"];
+	$tuition = $_POST["tuition"];
+	$newStudent = $xml->createElement('Student');
+	$newStudent->appendChild($xml->createElement('id', $id));
+	$newStudent->appendChild($xml->createElement('name', $name));
+	$newStudent->appendChild($xml->createElement('course', $course));
+	$newStudent->appendChild($xml->createElement('tuition', $tuition));
+	$xml->getElementsByTagName('Students')->item(0)->appendChild($newStudent);
+	$test = $xml->Save('data.xml');
+	if($test)
+		echo "Sucessfully Added!";
 ?>
-<br><a href="index.php">BACK</a>
+<br/><a href="index.php">BACK</a>

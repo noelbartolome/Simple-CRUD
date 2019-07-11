@@ -1,20 +1,27 @@
 <?xml version="1.0"?>
-<pos>
-  
-  <product><itemNum>002</itemNum><desc>me</desc><loc>me</loc><quantt>30</quantt><price>30</price></product>
-  <product>
-    <itemNum>003</itemNum>
-    <desc>0003</desc>
-    <loc>malqwe</loc>
-    <quantt>100</quantt>
-    <price>2</price>
-  </product>
-  <product>
-    <itemNum>004</itemNum>
-    <desc>kewl</desc>
-    <loc>kewl</loc>
-    <quantt>10</quantt>
-    <price>50</price>
-  </product>
-  
-</pos>
+<Students>
+  <Student>
+    <id>002</id>
+    <name>Ryker</name>
+    <course>BS Acc</course>
+    <tuition>10000</tuition>
+  </Student>
+  <Student>
+    <id>003</id>
+    <name>Gabriel</name>
+    <course>BSIT</course>
+    <tuition>400</tuition>
+  </Student>
+  <Student>
+    <id>005</id>
+    <name>Chesz</name>
+    <course>BS Psych</course>
+    <tuition>1234</tuition>
+  </Student>
+  <Student>
+    <id>001</id>
+    <name>Juan</name>
+    <course>BS Lib</course>
+    <tuition>100000</tuition>
+  </Student>
+</Students>
